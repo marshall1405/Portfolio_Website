@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lato&family=Libre+Baskerville&family=Merriweather&family=Noto+Serif&family=Young+Serif&display=swap');
+
+
 
 /* #c82b22 - red */
 /* #d1a104 - yellow*/
+
+h1, h2, h3, h4, h5, p{
+    font-weight: 550;
+}
 
 * {
     box-sizing: border-box;
@@ -10,9 +17,9 @@
 }
 
 body {
-    font-family: 'Source Code Pro';
+    font-family: 'Young Serif';
     background: #333333;
-    color: #fff;
+    color: #e3e3e3;
     line-height: 1.6;
 }
 
@@ -21,7 +28,7 @@ ul {
 }
 
 a {
-    color: #fff;
+    color: #e3e3e3;
     text-decoration: none;
 }
 
@@ -62,7 +69,7 @@ content {
 }
 
 .navbar a:hover {
-    border-bottom: #fff solid 2px;
+    border-bottom: #e3e3e3 solid 2px;
 }
 
 .logo {
@@ -85,13 +92,12 @@ content {
 .left_sidebar, .right_sidebar {
     border-radius: 20px;
     border: 2px dotted #999999;
-    height: 600px;
+    height: 500px;
     width: 20%;
     margin-top: 10px;
     background-color: #3b3b3b;
     align-items: center;
     text-align: center;
-    position: sticky;
 }
 
 .empty_left_index, .empty_right_index{
@@ -122,13 +128,13 @@ content {
     border-radius: 20px;
 }
 .profile_images img {
-    width: 65%;
+    width: 50%;
     margin-top: 20px;
     margin-bottom: 5px;
     border-radius: 20px;
     left: 30px;
     bottom: 10px;
-    border: 10px solid #fff;
+    border: 10px solid #e3e3e3;
 }
 
 .name_and_prem {
@@ -152,29 +158,29 @@ content {
 
 
 .right_sidebar .work{
-    height: 300px;
-    padding: 10px;
+    height: 250px;
     border-bottom: 2px dotted #999999;
 }
 
 .right_sidebar .education{
     height: 300px;
-    padding: 10px;
 }
 
 .right_sidebar .logo_and_name{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom:10px;
+    border-bottom: 2px dotted #999999;
 }
 
 .logo_and_name img{
     object-fit: contain;
-    max-width: 125px;
-    max-height: 125px;
+    max-width: 20%;
+    max-height: 20%;
     border: 5px solid #111111;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #e3e3e3;
 }
 
 .logo_and_name h2{
@@ -183,7 +189,7 @@ content {
 }
 
 .left_sidebar p, .right_sidebar p{
-    margin: 10px;
+    margin: 6px;
     font-size: 17px;
 }
 
@@ -199,7 +205,7 @@ content {
     height: 30px;
     background: #111111;
     border-radius: 5px;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
 }
 
 .main_area h2{
@@ -214,7 +220,7 @@ content {
 }
 
 .main_area a:hover {
-    border-bottom: #fff solid 2px;
+    border-bottom: #e3e3e3 solid 2px;
 }
 
 .progress_sql{
@@ -259,8 +265,18 @@ content {
     border-bottom: 2px dotted #999999;
 }
 
+.technical_skills h2{
+    margin: 10px;
+}
+
 .language_skills{
-    margin-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 20px;
+    border-bottom: 2px dotted #999999;
+}
+
+.language_skills h2{
+    margin: 10px;
 }
 
 .progress_english{
@@ -287,14 +303,56 @@ content {
     background: #d1a104;
 }
 
+.hobbies{
+    margin-top: 25px;
+}
+
+.hobbies h2{
+    margin: 10px;
+}
+
+.hobbies h4{
+    font-size: 17px;
+}
+
+.progress_music{
+    height: 30px;
+    width: 100%;
+    background: #e3e3e3;
+}
+
+.progress_technology{
+    height: 30px;
+    width: 90%;
+    background: #e3e3e3;
+}
+
+.progress_politics{
+    height: 30px;
+    width: 75%;
+    background: #e3e3e3;
+}
+
+.progress_mma{
+    height: 30px;
+    width: 55%;
+    background: #e3e3e3;
+}
+
+.progress_history{
+    height: 30px;
+    width: 40%;
+    background: #e3e3e3;
+}
+
 /* Coding */
 
 .coding_post{
    height: 600px;
-   background-color: #3b3b3b;
+   background-color: #292828;
    border-radius: 20px;
-   border: 2px solid #999999;
-   margin-bottom: 20px;
+   border: 3px solid #e3e3e3;
+   margin: 0 10px 30px 10px;
 }
 .coding_post h2{
     border-bottom: 2px solid #999999;
@@ -302,15 +360,69 @@ content {
 
 .coding_post .gallery{
     display: flex;
+    justify-content: space-between;
     height: 60%;
     border-bottom: 2px solid #999999;
 }
 
 .coding_post .gallery img{
-    width: 50%;
+    width: 35%;
+    border-radius: 20px;
+    margin: 20px 50px 20px 50px;
+    border: 2px solid #e3e3e3;
 }
 
 .coding_post p{
-    margin-bottom: 15px
+    margin: 15px 0 15px 0;
 }
 
+/* Music */
+
+
+.my_yt_channel{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #e3e3e3;
+    border-radius: 20px;
+
+}
+
+.my_yt_channel a{
+    font-size: 30px;
+    background-color: #d1a104;
+    margin: 10px;
+}
+
+.my_yt_channel img{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.my_yt_channel p{
+    margin: 0 10px 0 10px;
+}
+
+.latest_video{
+    height: 500px;
+    width: 100%;
+    border: 3px solid #e3e3e3;
+    border-radius: 20px;
+}
+
+.latest_video h2{
+    border-bottom: 2px solid #e3e3e3;
+    margin: 20px 0 20px 0;
+}
+
+.latest_video iframe{
+    border-radius: 20px;
+}
