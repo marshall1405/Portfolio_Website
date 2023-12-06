@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Source+Code+Pro&display=swap');
+
+/* #c82b22 - red */
+/* #d1a104 - yellow*/
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Source Code Pro';
+    background: #333333;
+    color: #fff;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+content {
+    position: relative;
+    top: 75px;
+}
+
+/* Navbar */
+.main_logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #3b3b3b;
+    width: 100%;
+    height: 75px;
+    padding: 0 10vh;
+    z-index: 10;
+}
+.current {
+    border-bottom: 1px solid;
+}
+
+.navbar ul {
+    display: flex;
+}
+.navbar a {
+    margin: 0 20px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    border-bottom: #fff solid 2px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+/* Content */
+.main_content {
+    display: flex;
+}
+
+.left_sidebar, .right_sidebar {
+    border-radius: 20px;
+    border: 2px dotted #999999;
+    height: 600px;
+    width: 20%;
+    margin-top: 10px;
+    background-color: #3b3b3b;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+}
+
+.empty_left_index, .empty_right_index{
+    width: 10%;
+    height: 1400px;
+}
+
+.left_sidebar{
+    margin-right: 10px;
+}
+
+.right_sidebar{
+    margin-left: 10px;
+}
+
+
+.main_area {
+    border-right: 1px dotted #999999;
+    border-left: 1px dotted #999999;
+    width: 40%;
+}
+
+/* Left Sidebar - Personal Info*/
+
+.profile_images{
+    background-image: url(/images/Declaration_of_Independence_\(1819\)\,_by_John_Trumbull-2.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
+.profile_images img {
+    width: 65%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    left: 30px;
+    bottom: 10px;
+    border: 10px solid #fff;
+}
+
+.name_and_prem {
+    margin: 0 100px 10px 100px;
+    align-items: center;
+}
+
+.personal_info h2{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+}
+
+.personal_info h4{
+    margin-bottom: 5px;
+}
+
+
+
+/* Right Sidebar - School and Work */
+
+
+.right_sidebar .work{
+    height: 300px;
+    padding: 10px;
+    border-bottom: 2px dotted #999999;
+}
+
+.right_sidebar .education{
+    height: 300px;
+    padding: 10px;
+}
+
+.right_sidebar .logo_and_name{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo_and_name img{
+    object-fit: contain;
+    max-width: 125px;
+    max-height: 125px;
+    border: 5px solid #111111;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.logo_and_name h2{
+    font-size: 150%;
+    margin: 0 20px 0 20px
+}
+
+.left_sidebar p, .right_sidebar p{
+    margin: 10px;
+    font-size: 17px;
+}
+
+
+/* Main Content */
+.main_area{
+    padding: 10px;
+    text-align: center;
+}
+
+.progress{
+    overflow: hidden;
+    height: 30px;
+    background: #111111;
+    border-radius: 5px;
+    margin-bottom: 0.7rem;
+}
+
+.main_area h2{
+    text-align: center;
+}
+
+.main_area a {
+    padding: 5px;
+    font-size: 20px;
+    background-color: #999999;
+    border-radius: 7px;
+}
+
+.main_area a:hover {
+    border-bottom: #fff solid 2px;
+}
+
+.progress_sql{
+    height: 30px;
+    width: 40%;
+    background: #c82b22;
+}
+
+.progress_cpp{
+    height: 30px;
+    width: 70%;
+    background: #c82b22;
+}
+
+.progress_java{
+    height: 30px;
+    width: 80%;
+    background: #c82b22;
+}
+
+.progress_ads{
+    height: 30px;
+    width: 50%;
+    background: #c82b22;
+}
+
+.progress_html{
+    height: 30px;
+    width: 60%;
+    background: #c82b22;
+}
+
+.progress_czech{
+    height: 30px;
+    width: 100%;
+    background: #d1a104;
+}
+
+.technical_skills{
+    margin-top: 20px;
+    padding-bottom: 25px;
+    border-bottom: 2px dotted #999999;
+}
+
+.language_skills{
+    margin-top: 25px;
+}
+
+.progress_english{
+    height: 30px;
+    width: 90%;
+    background: #d1a104;
+}
+
+.progress_german{
+    height: 30px;
+    width: 85%;
+    background: #d1a104;
+}
+
+.progress_french{
+    height: 30px;
+    width: 30%;
+    background: #d1a104;
+}
+
+.progress_russian{
+    height: 30px;
+    width: 20%;
+    background: #d1a104;
+}
+
+/* Coding */
+
+.coding_post{
+   height: 600px;
+   background-color: #3b3b3b;
+   border-radius: 20px;
+   border: 2px solid #999999;
+   margin-bottom: 20px;
+}
+.coding_post h2{
+    border-bottom: 2px solid #999999;
+ }
+
+.coding_post .gallery{
+    display: flex;
+    height: 60%;
+    border-bottom: 2px solid #999999;
+}
+
+.coding_post .gallery img{
+    width: 50%;
+}
+
+.coding_post p{
+    margin-bottom: 15px
+}
+
