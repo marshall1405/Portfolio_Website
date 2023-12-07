@@ -231,7 +231,7 @@ content {
 
 .progress_cpp{
     height: 30px;
-    width: 70%;
+    width: 80%;
     background: #c82b22;
 }
 
@@ -425,4 +425,21 @@ content {
 
 .latest_video iframe{
     border-radius: 20px;
+}
+
+.youtube_button{
+    padding: 20px;
+    color: #fff;
+    background-color: #cc181e;
+    display:flex;
+    align-items: center;
+}
+
+i{
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+span{
+    margin-right: 4px;
 }
