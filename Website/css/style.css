@@ -241,6 +241,12 @@ content {
     background: #c82b22;
 }
 
+.progress_premiere_pro{
+    height: 30px;
+    width: 55%;
+    background: #c82b22;
+}
+
 .progress_ads{
     height: 30px;
     width: 50%;
@@ -349,6 +355,7 @@ content {
 
 .coding_post{
    height: 600px;
+   width: 100%;
    background-color: #292828;
    border-radius: 20px;
    border: 3px solid #e3e3e3;
@@ -359,13 +366,15 @@ content {
  }
 
 .coding_post .gallery{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 60%;
     border-bottom: 2px solid #999999;
 }
 
-.coding_post .gallery img{
+.coding_post img{
     width: 35%;
     border-radius: 20px;
     margin: 20px 50px 20px 50px;
